@@ -6,15 +6,21 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/79985/CLionProjects/DataStructure/Sqlist.cpp
-Sqlist.h
-C:/Users/79985/CLionProjects/DataStructure/Sqlist.h
-iostream
--
+C:/Users/79985/CLionProjects/DataStructure/LinkList.h
+./structure.h
+C:/Users/79985/CLionProjects/DataStructure/structure.h
 
 C:/Users/79985/CLionProjects/DataStructure/Sqlist.h
 structure.h
 C:/Users/79985/CLionProjects/DataStructure/structure.h
+
+C:/Users/79985/CLionProjects/DataStructure/main.cpp
+iostream
+-
+./Sqlist.h
+C:/Users/79985/CLionProjects/DataStructure/Sqlist.h
+./LinkList.h
+C:/Users/79985/CLionProjects/DataStructure/LinkList.h
 
 C:/Users/79985/CLionProjects/DataStructure/structure.h
 

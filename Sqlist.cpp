@@ -41,7 +41,7 @@ Sqlists Init_SqlistWithPointer()
 //静态顺序表的赋值
 void Define_Sqlist(Sqlists L)
 {
-    cout<<"Please input the elment U wanna insert."<<endl<<"And if U want to end inputting, just input 99."<<endl;
+    cout<<"输入要插入的值"<<endl<<"输入99结束输入"<<endl;
     int i=0;
     int elm;
     while(i<100){
@@ -56,7 +56,7 @@ void Define_Sqlist(Sqlists L)
 
 //静态顺序表的打印
 void Show_Sqlist(Sqlists L){
-    cout<<"The length of the sqlist is "<<L->length<<endl;
+    cout<<"顺序表的长为"<<L->length<<endl;
     for(int i = 0;i < L->length; i++){
         cout<<L->data[i]<<" ";
     }
@@ -115,7 +115,7 @@ void Init_Seqlist(Seqlists &L){
 //动态顺序表的赋值
 void Define_Seqlist(Seqlists L)
 {
-    cout<<"Please input the elment U wanna insert."<<endl<<"And if U want to end inputting, just input 99."<<endl;
+    cout<<"输入要插入的值"<<endl<<"输入99结束输入"<<endl;
     int i=0;
     int elm;
     while(i<100){
@@ -130,7 +130,7 @@ void Define_Seqlist(Seqlists L)
 
 //动态顺序表的打印
 void Show_Seqlist(Seqlists L){
-    cout<<"The length of the seqlist is "<<L->length<<endl;
+    cout<<"顺序表的长为"<<L->length<<endl;
     for(int i = 0;i < L->length; i++){
         cout<<L->data[i]<<" ";
     }

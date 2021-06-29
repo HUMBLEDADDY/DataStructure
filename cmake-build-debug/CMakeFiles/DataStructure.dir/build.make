@@ -78,44 +78,59 @@ include CMakeFiles/DataStructure.dir/flags.make
 CMakeFiles/DataStructure.dir/main.cpp.obj: CMakeFiles/DataStructure.dir/flags.make
 CMakeFiles/DataStructure.dir/main.cpp.obj: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\79985\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DataStructure.dir/main.cpp.obj"
-	C:\PROGRA~2\Dev-Cpp\MinGW64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DataStructure.dir\main.cpp.obj -c C:\Users\79985\CLionProjects\DataStructure\main.cpp
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DataStructure.dir\main.cpp.obj -c C:\Users\79985\CLionProjects\DataStructure\main.cpp
 
 CMakeFiles/DataStructure.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DataStructure.dir/main.cpp.i"
-	C:\PROGRA~2\Dev-Cpp\MinGW64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\79985\CLionProjects\DataStructure\main.cpp > CMakeFiles\DataStructure.dir\main.cpp.i
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\79985\CLionProjects\DataStructure\main.cpp > CMakeFiles\DataStructure.dir\main.cpp.i
 
 CMakeFiles/DataStructure.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DataStructure.dir/main.cpp.s"
-	C:\PROGRA~2\Dev-Cpp\MinGW64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\79985\CLionProjects\DataStructure\main.cpp -o CMakeFiles\DataStructure.dir\main.cpp.s
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\79985\CLionProjects\DataStructure\main.cpp -o CMakeFiles\DataStructure.dir\main.cpp.s
 
 CMakeFiles/DataStructure.dir/Sqlist.cpp.obj: CMakeFiles/DataStructure.dir/flags.make
 CMakeFiles/DataStructure.dir/Sqlist.cpp.obj: ../Sqlist.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\79985\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DataStructure.dir/Sqlist.cpp.obj"
-	C:\PROGRA~2\Dev-Cpp\MinGW64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DataStructure.dir\Sqlist.cpp.obj -c C:\Users\79985\CLionProjects\DataStructure\Sqlist.cpp
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DataStructure.dir\Sqlist.cpp.obj -c C:\Users\79985\CLionProjects\DataStructure\Sqlist.cpp
 
 CMakeFiles/DataStructure.dir/Sqlist.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DataStructure.dir/Sqlist.cpp.i"
-	C:\PROGRA~2\Dev-Cpp\MinGW64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\79985\CLionProjects\DataStructure\Sqlist.cpp > CMakeFiles\DataStructure.dir\Sqlist.cpp.i
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\79985\CLionProjects\DataStructure\Sqlist.cpp > CMakeFiles\DataStructure.dir\Sqlist.cpp.i
 
 CMakeFiles/DataStructure.dir/Sqlist.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DataStructure.dir/Sqlist.cpp.s"
-	C:\PROGRA~2\Dev-Cpp\MinGW64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\79985\CLionProjects\DataStructure\Sqlist.cpp -o CMakeFiles\DataStructure.dir\Sqlist.cpp.s
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\79985\CLionProjects\DataStructure\Sqlist.cpp -o CMakeFiles\DataStructure.dir\Sqlist.cpp.s
+
+CMakeFiles/DataStructure.dir/LinkList.cpp.obj: CMakeFiles/DataStructure.dir/flags.make
+CMakeFiles/DataStructure.dir/LinkList.cpp.obj: ../LinkList.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\79985\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DataStructure.dir/LinkList.cpp.obj"
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DataStructure.dir\LinkList.cpp.obj -c C:\Users\79985\CLionProjects\DataStructure\LinkList.cpp
+
+CMakeFiles/DataStructure.dir/LinkList.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DataStructure.dir/LinkList.cpp.i"
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\79985\CLionProjects\DataStructure\LinkList.cpp > CMakeFiles\DataStructure.dir\LinkList.cpp.i
+
+CMakeFiles/DataStructure.dir/LinkList.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DataStructure.dir/LinkList.cpp.s"
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\79985\CLionProjects\DataStructure\LinkList.cpp -o CMakeFiles\DataStructure.dir\LinkList.cpp.s
 
 # Object files for target DataStructure
 DataStructure_OBJECTS = \
 "CMakeFiles/DataStructure.dir/main.cpp.obj" \
-"CMakeFiles/DataStructure.dir/Sqlist.cpp.obj"
+"CMakeFiles/DataStructure.dir/Sqlist.cpp.obj" \
+"CMakeFiles/DataStructure.dir/LinkList.cpp.obj"
 
 # External object files for target DataStructure
 DataStructure_EXTERNAL_OBJECTS =
 
 DataStructure.exe: CMakeFiles/DataStructure.dir/main.cpp.obj
 DataStructure.exe: CMakeFiles/DataStructure.dir/Sqlist.cpp.obj
+DataStructure.exe: CMakeFiles/DataStructure.dir/LinkList.cpp.obj
 DataStructure.exe: CMakeFiles/DataStructure.dir/build.make
 DataStructure.exe: CMakeFiles/DataStructure.dir/linklibs.rsp
 DataStructure.exe: CMakeFiles/DataStructure.dir/objects1.rsp
 DataStructure.exe: CMakeFiles/DataStructure.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\79985\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable DataStructure.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\79985\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable DataStructure.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\DataStructure.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

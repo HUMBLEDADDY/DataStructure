@@ -1,14 +1,19 @@
 #include <iostream>
 #include "./Sqlist.h"
+#include "./LinkList.h"
+
+
 using namespace std;
 void SqlistTest();
+void LinklistTest();
 
 int main() {
+//    system("chcp 65001");//中文乱码，运行这个;
     int operatorNum = 0;
     while(operatorNum != -1){
-        cout<<"enter 1 to Sqllist"<<endl;
-        cout<<"enter 2 to LinkList"<<endl;
-        cout<<"enter 3 to DLinkList"<<endl;
+        cout<<"输入1测试顺序表"<<endl;
+        cout<<"输入2测试单链表"<<endl;
+        cout<<"输入3测试双链表"<<endl;
         cin>>operatorNum;
         switch (operatorNum) {
             case -1:{
@@ -17,6 +22,10 @@ int main() {
             }
             case 1:{
                 SqlistTest();
+                break;
+            }
+            case 2:{
+                LinklistTest();
                 break;
             }
             default:{
@@ -47,9 +56,9 @@ void SqlistTest(){
     //插入新元素
     int indexToInsert;//要插入的位置
     int elemToInsert;//要插入的元素
-    cout<<"Please enter the location of the new element to insert: ";//插入的位置
+    cout<<"输入插入的位置：";//插入的位置
     cin>>indexToInsert;
-    cout<<"Please enter the value of the new element to insert: ";//插入的元素的值
+    cout<<"输入要插入的元素的值";//插入的元素的值
     cin>>elemToInsert;
     if(Insert_Sqlist(L,indexToInsert,elemToInsert)){
         cout<<"insert successfully!"<<endl;
@@ -58,7 +67,7 @@ void SqlistTest(){
 
     //删除元素
     int indexToDelete;//要删除的元素的位置
-    cout<<"Please enter the location of the  element to delete: ";
+    cout<<"输入删除第几个元素";
     cin>>indexToDelete;
     if(Delete_Sqlist(L,indexToDelete)){
         cout<<"delete successfully!"<<endl;
@@ -67,7 +76,7 @@ void SqlistTest(){
 
     //按值查找元素
     int valueToSearch;
-    cout<<"Please enter the value of the  element to search: ";
+    cout<<"输入要查找元素的值";
     cin>>valueToSearch;
     int SearchReasult = FindElementByValue_Sqlist(L,valueToSearch);
     if(SearchReasult!=0){
@@ -85,6 +94,10 @@ void SqlistTest(){
     Init_Seqlist(SeqL);//引用初始化动态顺序表
 //    Define_Seqlist(SeqL);//输入顺序表
 //    Show_Seqlist(SeqL);//打印顺序表
+}
 
-
+void LinklistTest(){
+    Linklist L;
+    List_HeadInsert(L);
+    Show_Link(L);
 }
