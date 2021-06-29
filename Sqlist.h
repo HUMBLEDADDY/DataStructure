@@ -19,6 +19,12 @@ void Define_Sqlist(Sqlists L);
 
 void Show_Sqlist(Sqlists L);
 
+bool Insert_Sqlist(Sqlists &L,int i,int elem);
+
+bool Delete_Sqlist(Sqlists &L,int i);
+
+int FindElementByValue_Sqlist(Sqlists L,int value);
+
 //动态顺序表
 
 void Init_Seqlist(Seqlists &L);

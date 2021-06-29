@@ -38,10 +38,10 @@ Sqlists Init_SqlistWithPointer()
     return init_L;
 }
 
-//顺序表的赋值
+//静态顺序表的赋值
 void Define_Sqlist(Sqlists L)
 {
-    cout<<"Please input the elment U wanna insert."<<endl<<"And if U want to stop inputting, just input 99."<<endl;
+    cout<<"Please input the elment U wanna insert."<<endl<<"And if U want to end inputting, just input 99."<<endl;
     int i=0;
     int elm;
     while(i<100){
@@ -54,16 +54,52 @@ void Define_Sqlist(Sqlists L)
     }
 }
 
+//静态顺序表的打印
 void Show_Sqlist(Sqlists L){
+    cout<<"The length of the sqlist is "<<L->length<<endl;
     for(int i = 0;i < L->length; i++){
         cout<<L->data[i]<<" ";
     }
     cout<<endl<<"==============================================="<<endl;
 }
 
+//静态顺序表插入新元素
+bool Insert_Sqlist(Sqlists &L,int i,int elem){
+    if( i < 1 || i > L->length+1 ){
+        return false;
+    }
+    if( L->length >= maxSize ){
+        return false;
+    }
+    for(int index = L->length; index >= i; index--){
+        L->data[index] = L->data[index-1];
+    }
+    L->data[i-1] = elem;
+    L->length++;
+    return true;
+}
 
-//-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=//
+//静态顺序表删除元素
+bool Delete_Sqlist(Sqlists &L,int i){
+    if( i < 1 || i > L->length+1 ){
+        return false;
+    }
+    for(int index = i-1; index < L->length-1; index++){
+        L->data[index] = L->data[index+1];
+    }
+    L->length--;
+    return true;
+}
 
+//静态顺序表按值查找
+int FindElementByValue_Sqlist(Sqlists L,int value){
+    for(int index = 0; index < L->length; index++){
+       if( L->data[index] == value ){
+           return index+1;
+       }
+    }
+    return 0;
+}
 
 //动态顺序表
 
@@ -76,10 +112,10 @@ void Init_Seqlist(Seqlists &L){
     L = init_L;
 }
 
-//顺序表的赋值
+//动态顺序表的赋值
 void Define_Seqlist(Seqlists L)
 {
-    cout<<"Please input the elment U wanna insert."<<endl<<"And if U want to stop inputting, just input 99."<<endl;
+    cout<<"Please input the elment U wanna insert."<<endl<<"And if U want to end inputting, just input 99."<<endl;
     int i=0;
     int elm;
     while(i<100){
@@ -92,7 +128,9 @@ void Define_Seqlist(Seqlists L)
     }
 }
 
+//动态顺序表的打印
 void Show_Seqlist(Seqlists L){
+    cout<<"The length of the seqlist is "<<L->length<<endl;
     for(int i = 0;i < L->length; i++){
         cout<<L->data[i]<<" ";
     }
