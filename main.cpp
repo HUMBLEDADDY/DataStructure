@@ -14,6 +14,7 @@ int main() {
         cout<<"输入1测试顺序表"<<endl;
         cout<<"输入2测试单链表"<<endl;
         cout<<"输入3测试双链表"<<endl;
+        cout<<"输入-1停止"<<endl;
         cin>>operatorNum;
         switch (operatorNum) {
             case -1:{
@@ -54,6 +55,7 @@ void SqlistTest(){
     Show_Sqlist(L);//打印顺序表
 
     //插入新元素
+    cout<<"顺序表插入新元素"<<endl;
     int indexToInsert;//要插入的位置
     int elemToInsert;//要插入的元素
     cout<<"输入插入的位置：";//插入的位置
@@ -66,6 +68,7 @@ void SqlistTest(){
     }
 
     //删除元素
+    cout<<"顺序表删除元素"<<endl;
     int indexToDelete;//要删除的元素的位置
     cout<<"输入删除第几个元素";
     cin>>indexToDelete;
@@ -75,6 +78,7 @@ void SqlistTest(){
     }
 
     //按值查找元素
+    cout<<"顺序表按值查找"<<endl;
     int valueToSearch;
     cout<<"输入要查找元素的值";
     cin>>valueToSearch;
@@ -98,6 +102,52 @@ void SqlistTest(){
 
 void LinklistTest(){
     Linklist L;
-    List_HeadInsert(L);
+    cout<<"所用的链表都默认带头结点"<<endl;
+
+    //创建单链表
+//    List_HeadInsert(L);//头插法创建单链表
+    List_TailInsert(L);//尾插法创建单链表
     Show_Link(L);
+
+    //按位查找
+    cout<<"按位查找"<<endl;
+    int index = 0;
+    cout<<"输入要查找第几个元素"<<endl;
+    cin>>index;
+    Linklist theElem1 = GetElemByIndex(L,index);
+    if(theElem1)
+        cout<<"第"<<index<<"个元素为"<<theElem1->data<<endl;
+    else
+        cout<<"没找到"<<endl;
+    cout<<"==============================================="<<endl;
+
+    //按值查找
+    cout<<"按值查找"<<endl;
+    int value = 0;
+    cout<<"输入要查找的值"<<endl;
+    cin>>value;
+    Linklist theELem2 = GetElemByValue(L,value);
+    if(theELem2 != nullptr) {
+        cout << theELem2->data<<endl;
+        cout << "值为" << value << "的元素找到了" << endl;
+    } else {
+        cout << "没找到" << endl;
+    }
+    cout<<"==============================================="<<endl;
+
+    //单链表插入结点
+    cout<<"单链表插入结点"<<endl;
+    int valueToInsert = 0;
+    int indexToInsert = 0;
+    cout<<"输入要插入在哪个结点之后"<<endl;
+    cin>>indexToInsert;
+    cout<<"输入要插入的值"<<endl;
+    cin>>valueToInsert;
+    if(InsertElemToLinklinst(L,valueToInsert,indexToInsert)){
+        cout<<"插入成功！"<<endl;
+        Show_Link(L);
+    } else {
+        cout<<"插入失败！"<<endl;
+        cout<<"==============================================="<<endl;
+    }
 }

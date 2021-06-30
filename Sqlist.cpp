@@ -38,9 +38,10 @@ Sqlists Init_SqlistWithPointer()
     return init_L;
 }
 
-//静态顺序表的赋值
+//静态顺序表的输入
 void Define_Sqlist(Sqlists L)
 {
+    cout<<"静态顺序表的赋值"<<endl;
     cout<<"输入要插入的值"<<endl<<"输入99结束输入"<<endl;
     int i=0;
     int elm;
