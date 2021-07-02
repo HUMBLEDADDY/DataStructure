@@ -141,6 +141,33 @@ DataStructure/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/build
 .PHONY : DataStructure/fast
 
+DLinklist.obj: DLinklist.cpp.obj
+
+.PHONY : DLinklist.obj
+
+# target to build an object file
+DLinklist.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/DLinklist.cpp.obj
+.PHONY : DLinklist.cpp.obj
+
+DLinklist.i: DLinklist.cpp.i
+
+.PHONY : DLinklist.i
+
+# target to preprocess a source file
+DLinklist.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/DLinklist.cpp.i
+.PHONY : DLinklist.cpp.i
+
+DLinklist.s: DLinklist.cpp.s
+
+.PHONY : DLinklist.s
+
+# target to generate assembly for a file
+DLinklist.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/DLinklist.cpp.s
+.PHONY : DLinklist.cpp.s
+
 LinkList.obj: LinkList.cpp.obj
 
 .PHONY : LinkList.obj
@@ -231,6 +258,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... DataStructure
+	@echo ... DLinklist.obj
+	@echo ... DLinklist.i
+	@echo ... DLinklist.s
 	@echo ... LinkList.obj
 	@echo ... LinkList.i
 	@echo ... LinkList.s

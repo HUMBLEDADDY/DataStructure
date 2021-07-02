@@ -6,11 +6,15 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/79985/CLionProjects/DataStructure/LinkList.cpp
-LinkList.h
-C:/Users/79985/CLionProjects/DataStructure/LinkList.h
+C:/Users/79985/CLionProjects/DataStructure/DLinklist.cpp
+DLinklist.h
+C:/Users/79985/CLionProjects/DataStructure/DLinklist.h
 iostream
 -
+
+C:/Users/79985/CLionProjects/DataStructure/DLinklist.h
+./structure.h
+C:/Users/79985/CLionProjects/DataStructure/structure.h
 
 C:/Users/79985/CLionProjects/DataStructure/LinkList.h
 ./structure.h
@@ -27,6 +31,8 @@ iostream
 C:/Users/79985/CLionProjects/DataStructure/Sqlist.h
 ./LinkList.h
 C:/Users/79985/CLionProjects/DataStructure/LinkList.h
+./DLinkList.h
+C:/Users/79985/CLionProjects/DataStructure/DLinklist.h
 
 C:/Users/79985/CLionProjects/DataStructure/structure.h
 

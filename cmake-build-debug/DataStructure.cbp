@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/79985/CLionProjects/DataStructure/DLinklist.cpp">
+			<Option target="DataStructure"/>
+		</Unit>
+		<Unit filename="C:/Users/79985/CLionProjects/DataStructure/DLinklist.h">
+			<Option target="DataStructure"/>
+		</Unit>
 		<Unit filename="C:/Users/79985/CLionProjects/DataStructure/LinkList.cpp">
 			<Option target="DataStructure"/>
 		</Unit>

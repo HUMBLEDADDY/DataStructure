@@ -1,14 +1,17 @@
 #include <iostream>
 #include "./Sqlist.h"
 #include "./LinkList.h"
+#include "./DLinkList.h"
 
 
 using namespace std;
 void SqlistTest();
 void LinklistTest();
+void DLinklistTest();
 
 int main() {
 //    system("chcp 65001");//中文乱码，运行这个;
+
     int operatorNum = 0;
     while(operatorNum != -1){
         cout<<"输入1测试顺序表"<<endl;
@@ -27,6 +30,10 @@ int main() {
             }
             case 2:{
                 LinklistTest();
+                break;
+            }
+            case 3:{
+                DLinklistTest();
                 break;
             }
             default:{
@@ -79,11 +86,11 @@ void SqlistTest(){
 
     //按值查找元素
     cout<<"顺序表按值查找"<<endl;
-    int valueToSearch;
+    int valueToSearch;//要查询的元素的值
     cout<<"输入要查找元素的值";
     cin>>valueToSearch;
-    int SearchReasult = FindElementByValue_Sqlist(L,valueToSearch);
-    if(SearchReasult!=0){
+    int SearchReasult = FindElementByValue_Sqlist(L,valueToSearch);//查询的结果
+    if(SearchReasult!=0){//返回0代表不存在
         cout<<"search successfully!"<<endl;
         cout<<"the location of \""<<valueToSearch<<"\" is "<<SearchReasult<<endl;
     }
@@ -111,43 +118,85 @@ void LinklistTest(){
 
     //按位查找
     cout<<"按位查找"<<endl;
-    int index = 0;
+    int index = 0;//要查找的位置
     cout<<"输入要查找第几个元素"<<endl;
     cin>>index;
     Linklist theElem1 = GetElemByIndex(L,index);
     if(theElem1)
         cout<<"第"<<index<<"个元素为"<<theElem1->data<<endl;
-    else
+    else//没找到，返回的应该是一个空指针
         cout<<"没找到"<<endl;
     cout<<"==============================================="<<endl;
 
     //按值查找
     cout<<"按值查找"<<endl;
-    int value = 0;
+    int value = 0;//要查找的值
+    int Searchindex = 0;//用于存放结果的位置
     cout<<"输入要查找的值"<<endl;
     cin>>value;
-    Linklist theELem2 = GetElemByValue(L,value);
-    if(theELem2 != nullptr) {
+    Linklist theELem2 = GetElemByValue(L,value,Searchindex);
+    if(theELem2) {
         cout << theELem2->data<<endl;
-        cout << "值为" << value << "的元素找到了" << endl;
-    } else {
+        cout << "值为" << value << "的元素位置为"<<Searchindex << endl;
+    } else //没找到，返回的应该是一个空指针
         cout << "没找到" << endl;
-    }
     cout<<"==============================================="<<endl;
 
     //单链表插入结点
     cout<<"单链表插入结点"<<endl;
-    int valueToInsert = 0;
-    int indexToInsert = 0;
-    cout<<"输入要插入在哪个结点之后"<<endl;
+    int valueToInsert = 0;//插入的值
+    int indexToInsert = 0;//插入在那个结点点之后
+    cout<<"输入要插入的结点的位置"<<endl;
     cin>>indexToInsert;
     cout<<"输入要插入的值"<<endl;
     cin>>valueToInsert;
-    if(InsertElemToLinklinst(L,valueToInsert,indexToInsert)){
+    if(InsertElemToLinklist(L,valueToInsert,indexToInsert)){
         cout<<"插入成功！"<<endl;
         Show_Link(L);
     } else {
         cout<<"插入失败！"<<endl;
         cout<<"==============================================="<<endl;
     }
+
+    //单链表删除结点
+    cout<<"单链表删除结点"<<endl;
+    int indexToDelete = 0;
+    cout<<"输入要删除第几个结点"<<endl;
+    cin>>indexToDelete;
+    if(DeleteElemFromLink(L,indexToDelete)){
+        cout<<"删除成功！"<<endl;
+        Show_Link(L);
+    } else {
+        cout<<"删除失败！"<<endl;
+        cout<<"==============================================="<<endl;
+    }
+
+    //单链表删除特定结点
+    //局限性在于不能删除最后一个元素
+    cout<<"删除特定结点"<<endl;
+    int indexToDeleteSpecificElem = 0;
+    cout<<"输入要删除第几个元素，不能是最后一个元素"<<endl;
+    cin>>indexToDeleteSpecificElem;
+    Linklist theElem3 = GetElemByIndex(L,indexToDeleteSpecificElem);
+    if(theElem3){
+        if(DeleteSpecificElemFromLink(theElem3)){
+            cout<<"删除成功！"<<endl;
+        }
+        else{
+            cout<<"删除失败！不能删除最后一个元素"<<endl;
+        }
+    }
+    else{
+        cout<<"删除失败！未能找到该元素"<<endl;
+    }
+    Show_Link(L);
+
+}
+
+
+//双链表测试
+void DLinklistTest(){
+    DLinklist L;
+    DList_TailInsert(L);
+    Show_DLink(L);
 }

@@ -60,31 +60,72 @@ Linklist GetElemByIndex(Linklist L,int i){
 }
 
 //单链表按值查找
-Linklist GetElemByValue(Linklist L,int value){
+Linklist GetElemByValue(Linklist L,int value,int &index){//index引用传参，用于返回到主函数
     Linklist p = L->next;//跳过头结点
-    int i=1;
+    index = 1;
     while(p != nullptr){
         if(p->data == value){
             return p;
         }
         p = p->next;
+        index++;
     }
     return nullptr;//如果没找到,此时的p就是空指针
 }
 
 //单链表插入结点
-bool InsertElemToLinklinst(Linklist &L,int value,int index){
+bool InsertElemToLinklist(Linklist &L,int value,int index){
+    if(index <= 0){
+        return false;//输入的位置不合法，报错
+    }
     Linklist s = L;
     Linklist elemToInsert = new LNode;
     elemToInsert->data = value;
-    for(int i = 0;i < index;i++){
-        if(!s){
+    for(int i = 0;i < index-1;i++){
+        if(!s->next){
             return false;
         }
         s = s->next;
     }
     elemToInsert->next =  s->next;
     s->next = elemToInsert;
+    return true;
+}
+
+
+//单链表删除节点
+bool DeleteElemFromLink(Linklist &L,int index){
+    if(index <= 0){
+        return false;//输入的位置不合法，报错
+    }
+    Linklist s = L;
+    for(int i = 0;i < index-1;i++){
+        s = s->next;
+        if(s->next == nullptr){
+            cout<<i<<endl;
+            return false;
+        }
+    }
+    Linklist nodeTodelete = s->next;//先存着，用于释放内存
+    s->next = s->next->next;
+    delete(nodeTodelete->next);//释放内存
+    return true;
+}
+
+//删除某个给定节点p，也可以从头结点依次向后遍历，找到特定节点的前驱结点q，然后 q->next = q->next->next
+//虽然可以,但是格局小了,时间复杂度为O(n)
+//其实可以直接把p的后驱结点的值赋给p, p->next = p->next->next
+//但是这个方法有局限性
+//如果要删除最后一个元素，是删除不了的，因为p->next就不存在
+//单链表删除特定节点
+bool DeleteSpecificElemFromLink(Linklist &L){
+    if(L->next == nullptr){
+        return false;
+    }
+    Linklist nodeTodelete = L->next;//先存着，用于释放内存
+    L->data = L->next->data;
+    L->next = L->next->next;
+    delete(nodeTodelete);//释放内存
     return true;
 }
 
