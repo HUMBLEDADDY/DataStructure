@@ -80,6 +80,9 @@ bool InsertElemToLinklist(Linklist &L,int value,int index){
     }
     Linklist s = L;
     Linklist elemToInsert = new LNode;
+    if(elemToInsert  == nullptr){//内存分配失败
+        return false;
+    }
     elemToInsert->data = value;
     for(int i = 0;i < index-1;i++){
         if(!s->next){

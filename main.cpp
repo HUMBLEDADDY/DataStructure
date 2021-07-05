@@ -1,13 +1,19 @@
 #include <iostream>
+#include <iomanip>
 #include "./Sqlist.h"
 #include "./LinkList.h"
 #include "./DLinkList.h"
+#include "./Stack.h"
 
 
 using namespace std;
 void SqlistTest();
 void LinklistTest();
 void DLinklistTest();
+void SqStackTest();
+void LiStackTest();
+void ShStackTest();
+
 
 int main() {
 //    system("chcp 65001");//中文乱码，运行这个;
@@ -17,6 +23,10 @@ int main() {
         cout<<"输入1测试顺序表"<<endl;
         cout<<"输入2测试单链表"<<endl;
         cout<<"输入3测试双链表"<<endl;
+        cout<<"循环链表没什么好测试的，差不多"<<endl;
+        cout<<"输入4测试顺序栈"<<endl;
+        cout<<"输入5测试链栈"<<endl;
+        cout<<"输入6测试共享栈"<<endl;
         cout<<"输入-1停止"<<endl;
         cin>>operatorNum;
         switch (operatorNum) {
@@ -36,6 +46,18 @@ int main() {
                 DLinklistTest();
                 break;
             }
+            case 4:{
+                SqStackTest();
+                break;
+            }
+            case 5:{
+                LiStackTest();
+                break;
+            }
+            case 6:{
+                ShStackTest();
+                break;
+            }
             default:{
                 cout<<"wrong!"<<endl;
                 break;
@@ -44,6 +66,7 @@ int main() {
     }
 }
 
+//顺序表测试
 void SqlistTest(){
     Sqlists L;//定义一个静态顺序表指针
     Seqlists SeqL;//定义一个动态顺序表指针
@@ -107,6 +130,7 @@ void SqlistTest(){
 //    Show_Seqlist(SeqL);//打印顺序表
 }
 
+//单链表测试
 void LinklistTest(){
     Linklist L;
     cout<<"所用的链表都默认带头结点"<<endl;
@@ -193,10 +217,115 @@ void LinklistTest(){
 
 }
 
-
 //双链表测试
 void DLinklistTest(){
     DLinklist L;
     DList_TailInsert(L);
     Show_DLink(L);
+}
+
+//顺序栈测试
+void SqStackTest(){
+    SqStack S;
+    IniSqStack(S);
+    int data,top;
+    cout<<"请输入要插入栈的元素,输入99停止"<<endl;
+    cin>>data;
+    while(data != 99){
+        if(!SqStackPush(S,data)){
+            cout<<"插入失败"<<endl;
+            break;
+        }
+        GetSqStackTop(S,top);
+        cout<<"此时的栈顶元素为"<<top<<endl;
+        cin>>data;
+    }
+    cout<<"现在开始出栈"<<endl<<endl;
+    while(!SqStackEmpty(S)){
+        if(!SqStackPop(S,top)){
+            break;
+        }
+        cout<<"| "<<top<<" |"<<endl;
+    }
+    cout<<"_____"<<endl;
+}
+
+
+//链栈测试
+void LiStackTest(){
+    LiStack S;
+    InitLiStack(S);
+    int data,top;
+    cout<<"请输入要插入栈的元素,输入99停止"<<endl;
+    cin>>data;
+    while(data != 99){
+        if(!LiStackPush(S,data)){
+            cout<<"插入失败"<<endl;
+            break;
+        }
+        GetLiStackTop(S,top);
+        cout<<"此时的栈顶元素为"<<top<<endl;
+        cin>>data;
+    }
+    cout<<"现在开始出栈"<<endl<<endl;
+    while(!LiStackEmpty(S)){
+        if(!LiStackPop(S,top)){
+            break;
+        }
+        cout<<"| "<<top<<" |"<<endl;
+    }
+    cout<<"_____"<<endl;
+}
+
+//共享栈测试
+void ShStackTest(){
+    ShStack S;
+    InitShStack(S);
+    int data,top;
+    cout<<"将共享栈分为上下两栈"<<endl;
+    cout<<"请输入要插入上栈的元素,输入99停止"<<endl;
+    cin>>data;
+    while(data != 99){
+        if(!ShStackPush(S,data,1)){
+            cout<<"插入失败"<<endl;
+            break;
+        }
+        GetShStackTop(S,top,1);
+        cout<<"此时的栈顶元素为"<<top<<endl;
+        cin>>data;
+    }
+    cout<<"请输入要插入下栈的元素,输入99停止"<<endl;
+    cin>>data;
+    while(data != 99){
+        if(!ShStackPush(S,data,0)){
+            cout<<"插入失败"<<endl;
+            break;
+        }
+        GetShStackTop(S,top,0);
+        cout<<"此时的栈顶元素为"<<top<<endl;
+        cin>>data;
+    }
+    cout<<"现在开始出栈"<<endl<<endl;
+    cout<<"_____"<<endl;
+    int TopStack[50];
+    int TopStackLength = 0;
+    while(!ShStackEmpty(S,1)){
+        if(!ShStackPop(S,top,1)){
+            break;
+        }
+        TopStack[TopStackLength++] = top;
+    }
+    for(TopStackLength--;TopStackLength>=0;TopStackLength--){
+        cout<<"| "<<TopStack[TopStackLength]<<" |"<<endl;
+    }
+    cout<<"  .  "<<endl;
+    cout<<"  .  "<<endl;
+    cout<<"  .  "<<endl;
+    while(!ShStackEmpty(S,0)){
+        if(!ShStackPop(S,top,0)){
+            break;
+        }
+        cout<<"| "<<top<<" |"<<endl;
+    }
+    cout<<"_____"<<endl;
 }

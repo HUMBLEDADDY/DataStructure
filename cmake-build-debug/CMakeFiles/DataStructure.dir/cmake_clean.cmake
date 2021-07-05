@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/DataStructure.dir/DLinklist.cpp.obj"
   "CMakeFiles/DataStructure.dir/LinkList.cpp.obj"
+  "CMakeFiles/DataStructure.dir/SLinklist.cpp.obj"
   "CMakeFiles/DataStructure.dir/Sqlist.cpp.obj"
+  "CMakeFiles/DataStructure.dir/Stack.cpp.obj"
   "CMakeFiles/DataStructure.dir/main.cpp.obj"
   "DataStructure.exe"
   "DataStructure.exe.manifest"

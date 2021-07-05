@@ -92,10 +92,22 @@
 		<Unit filename="C:/Users/79985/CLionProjects/DataStructure/LinkList.h">
 			<Option target="DataStructure"/>
 		</Unit>
+		<Unit filename="C:/Users/79985/CLionProjects/DataStructure/SLinklist.cpp">
+			<Option target="DataStructure"/>
+		</Unit>
+		<Unit filename="C:/Users/79985/CLionProjects/DataStructure/SLinklist.h">
+			<Option target="DataStructure"/>
+		</Unit>
 		<Unit filename="C:/Users/79985/CLionProjects/DataStructure/Sqlist.cpp">
 			<Option target="DataStructure"/>
 		</Unit>
 		<Unit filename="C:/Users/79985/CLionProjects/DataStructure/Sqlist.h">
+			<Option target="DataStructure"/>
+		</Unit>
+		<Unit filename="C:/Users/79985/CLionProjects/DataStructure/Stack.cpp">
+			<Option target="DataStructure"/>
+		</Unit>
+		<Unit filename="C:/Users/79985/CLionProjects/DataStructure/Stack.h">
 			<Option target="DataStructure"/>
 		</Unit>
 		<Unit filename="C:/Users/79985/CLionProjects/DataStructure/main.cpp">

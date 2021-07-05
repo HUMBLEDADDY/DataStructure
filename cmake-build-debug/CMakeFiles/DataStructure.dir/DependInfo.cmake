@@ -6,7 +6,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/79985/CLionProjects/DataStructure/DLinklist.cpp" "C:/Users/79985/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/DLinklist.cpp.obj"
   "C:/Users/79985/CLionProjects/DataStructure/LinkList.cpp" "C:/Users/79985/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/LinkList.cpp.obj"
+  "C:/Users/79985/CLionProjects/DataStructure/SLinklist.cpp" "C:/Users/79985/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/SLinklist.cpp.obj"
   "C:/Users/79985/CLionProjects/DataStructure/Sqlist.cpp" "C:/Users/79985/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/Sqlist.cpp.obj"
+  "C:/Users/79985/CLionProjects/DataStructure/Stack.cpp" "C:/Users/79985/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/Stack.cpp.obj"
   "C:/Users/79985/CLionProjects/DataStructure/main.cpp" "C:/Users/79985/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

@@ -32,4 +32,41 @@ typedef struct  DLNode{
     struct DLNode *prior;
     struct DLNode *next;
 }DLNode,*DLinklist;
+
+//静态单链表
+typedef struct { 
+    int data;
+    int next;//记录下标
+} SLinklist[maxSize];
+//上述写法等价于
+//typedef struct SDode{
+//    int data;
+//    int next;
+//};
+//typedef struct SDode SLinklist[maxSize];
+
+
+
+//顺序栈
+typedef struct {
+    int data[maxSize];
+    int top;
+}SqStack;
+
+//链栈
+typedef struct Linknode{
+    int data;
+    struct Linknode *next;
+}Linknode,*LiStack;
+
+//共享栈
+typedef struct {
+    int data[maxSize];
+    int top0,top1;
+}ShStack;
+
+
+
+
+
 #endif //DATASTRUCTURE_STRUCTURE_H

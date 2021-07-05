@@ -9,13 +9,21 @@ CMakeFiles/DataStructure.dir/LinkList.cpp.obj: ../LinkList.cpp
 CMakeFiles/DataStructure.dir/LinkList.cpp.obj: ../LinkList.h
 CMakeFiles/DataStructure.dir/LinkList.cpp.obj: ../structure.h
 
+CMakeFiles/DataStructure.dir/SLinklist.cpp.obj: ../SLinklist.cpp
+CMakeFiles/DataStructure.dir/SLinklist.cpp.obj: ../SLinklist.h
+
 CMakeFiles/DataStructure.dir/Sqlist.cpp.obj: ../Sqlist.cpp
 CMakeFiles/DataStructure.dir/Sqlist.cpp.obj: ../Sqlist.h
 CMakeFiles/DataStructure.dir/Sqlist.cpp.obj: ../structure.h
 
+CMakeFiles/DataStructure.dir/Stack.cpp.obj: ../Stack.cpp
+CMakeFiles/DataStructure.dir/Stack.cpp.obj: ../Stack.h
+CMakeFiles/DataStructure.dir/Stack.cpp.obj: ../structure.h
+
 CMakeFiles/DataStructure.dir/main.cpp.obj: ../DLinklist.h
 CMakeFiles/DataStructure.dir/main.cpp.obj: ../LinkList.h
 CMakeFiles/DataStructure.dir/main.cpp.obj: ../Sqlist.h
+CMakeFiles/DataStructure.dir/main.cpp.obj: ../Stack.h
 CMakeFiles/DataStructure.dir/main.cpp.obj: ../main.cpp
 CMakeFiles/DataStructure.dir/main.cpp.obj: ../structure.h
 

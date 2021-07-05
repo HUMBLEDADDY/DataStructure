@@ -195,6 +195,33 @@ LinkList.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/LinkList.cpp.s
 .PHONY : LinkList.cpp.s
 
+SLinklist.obj: SLinklist.cpp.obj
+
+.PHONY : SLinklist.obj
+
+# target to build an object file
+SLinklist.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/SLinklist.cpp.obj
+.PHONY : SLinklist.cpp.obj
+
+SLinklist.i: SLinklist.cpp.i
+
+.PHONY : SLinklist.i
+
+# target to preprocess a source file
+SLinklist.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/SLinklist.cpp.i
+.PHONY : SLinklist.cpp.i
+
+SLinklist.s: SLinklist.cpp.s
+
+.PHONY : SLinklist.s
+
+# target to generate assembly for a file
+SLinklist.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/SLinklist.cpp.s
+.PHONY : SLinklist.cpp.s
+
 Sqlist.obj: Sqlist.cpp.obj
 
 .PHONY : Sqlist.obj
@@ -221,6 +248,33 @@ Sqlist.s: Sqlist.cpp.s
 Sqlist.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Sqlist.cpp.s
 .PHONY : Sqlist.cpp.s
+
+Stack.obj: Stack.cpp.obj
+
+.PHONY : Stack.obj
+
+# target to build an object file
+Stack.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Stack.cpp.obj
+.PHONY : Stack.cpp.obj
+
+Stack.i: Stack.cpp.i
+
+.PHONY : Stack.i
+
+# target to preprocess a source file
+Stack.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Stack.cpp.i
+.PHONY : Stack.cpp.i
+
+Stack.s: Stack.cpp.s
+
+.PHONY : Stack.s
+
+# target to generate assembly for a file
+Stack.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Stack.cpp.s
+.PHONY : Stack.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -264,9 +318,15 @@ help:
 	@echo ... LinkList.obj
 	@echo ... LinkList.i
 	@echo ... LinkList.s
+	@echo ... SLinklist.obj
+	@echo ... SLinklist.i
+	@echo ... SLinklist.s
 	@echo ... Sqlist.obj
 	@echo ... Sqlist.i
 	@echo ... Sqlist.s
+	@echo ... Stack.obj
+	@echo ... Stack.i
+	@echo ... Stack.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
